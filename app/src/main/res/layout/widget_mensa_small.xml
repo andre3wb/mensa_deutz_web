@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="12dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="8dp">
+
+    <!-- Top mini status bar: "HEUTE" + "< >" on left, Price on right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/widget_day_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEUTE"
+            android:textColor="@color/widget_accent"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_btn_prev"
+            android:layout_width="26dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="@color/widget_text_muted"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_btn_next"
+            android:layout_width="26dp"
+            android:layout_height="22dp"
+            android:gravity="center"
+            android:text="›"
+            android:textColor="@color/widget_text_muted"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Dish 1/3 indicator or tap to switch -->
+        <TextView
+            android:id="@+id/widget_compact_counter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="1/3 (tippen)"
+            android:textColor="@color/widget_text_muted"
+            android:textSize="10.5sp" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/widget_compact_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,45 €"
+            android:textColor="@color/widget_accent"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Main Dish Name: Clean, Bold, 2 Lines, full width! -->
+    <TextView
+        android:id="@+id/widget_compact_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Hackbällchen mit Bratensauce"
+        android:textColor="@color/widget_text_primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Subtitle: Beilage/Details -->
+    <TextView
+        android:id="@+id/widget_compact_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="+ Basmatireis, Kaisergemüse"
+        android:textColor="@color/widget_text_muted"
+        android:textSize="11sp" />
+
+</LinearLayout>

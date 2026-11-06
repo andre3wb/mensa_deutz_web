@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mensa Deutz</string>
+    <string name="widget_name">Mensa Deutz Speiseplan</string>
+    <string name="widget_description">Aktuelle Hauptspeisen, Preise und Beilagen der Mensa IWZ Deutz auf deinem Pixel Homescreen.</string>
+</resources>

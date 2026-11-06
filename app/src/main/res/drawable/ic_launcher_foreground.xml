@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer Plate Ring -->
+    <path
+        android:fillColor="#26FFFFFF"
+        android:pathData="M54,54m-31,0a31,31 0,1 1,62 0a31,31 0,1 1,-62 0" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,54m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
+    <!-- Fork on left -->
+    <path
+        android:fillColor="#FFEA580C"
+        android:pathData="M43,39v10c0,2.2 1.8,4 4,4v16h3V53c2.2,0 4,-1.8 4,-4V39h-2v8h-1.5V39h-2v8H47V39h-2z" />
+    <!-- Spoon on right -->
+    <path
+        android:fillColor="#FFEA580C"
+        android:pathData="M61.5,39c-3,0 -5.5,2.9 -5.5,6.5c0,2.9 1.6,5.4 4,6.2V69h3V51.7c2.4,-0.8 4,-3.3 4,-6.2C67,41.9 64.5,39 61.5,39z" />
+</vector>

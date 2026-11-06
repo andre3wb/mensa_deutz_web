@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pixel Material You Light Mode Fallback -->
+    <color name="widget_bg_color">#F8FFFFFF</color>
+    <color name="widget_header_bg">#F1F5F9</color>
+    <color name="widget_card_item_bg">#F8FAFC</color>
+    <color name="widget_card_item_stroke">#E2E8F0</color>
+    <color name="widget_text_primary">#0F172A</color>
+    <color name="widget_text_secondary">#334155</color>
+    <color name="widget_text_muted">#64748B</color>
+    <color name="widget_accent">#EA580C</color>
+    <color name="widget_accent_soft">#FFEDD5</color>
+</resources>

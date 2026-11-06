@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Mensa Deutz</title>
+  <meta name="description" content="Speiseplan der KStW-Mensen in Köln (Mensa IWZ Deutz u.a.)">
+
+  <!-- PWA / iOS Home-Screen -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Mensa Deutz">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header id="header">
+      <div class="top-row">
+        <div class="app-badge">🍽️</div>
+        <button class="title-col" id="locationBtn" type="button">
+          <span id="headerTitle" class="header-title">Mensa IWZ Deutz ▾</span>
+          <span id="headerStatus" class="header-status"></span>
+        </button>
+        <button class="hbtn tier" id="tierBtn" type="button">💶 Stud.</button>
+        <button class="hbtn icon" id="themeBtn" type="button" aria-label="Design wechseln">🌙</button>
+        <button class="hbtn icon" id="refreshBtn" type="button" aria-label="Aktualisieren">↻</button>
+      </div>
+      <div class="hscroll" id="dayStrip"></div>
+      <div class="hscroll" id="filterStrip"></div>
+    </header>
+
+    <main id="content"></main>
+
+    <div id="trayBar" class="tray-bar hidden">
+      <div class="tray-text">
+        <div id="trayTitle" class="tray-title"></div>
+        <div id="traySubtitle" class="tray-subtitle"></div>
+      </div>
+      <button id="trayClear" class="tray-clear" type="button">Leeren</button>
+    </div>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
